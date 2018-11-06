@@ -9,6 +9,10 @@ class Car:
         Car._all.append(self)
         #remember to associate a car with its owner
 
+    @classmethod
+    def all(cls):
+        return cls._all
+
     @property
     def make(self):
         return self._make
@@ -29,3 +33,10 @@ class Car:
     @year.setter
     def year(self,year):
         self._year = year
+
+    @property
+    def owner(self):
+        return self._owner
+    @owner.setter
+    def owner(self,owner):
+        self._owner = owner
