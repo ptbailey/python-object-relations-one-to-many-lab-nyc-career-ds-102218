@@ -1,0 +1,4 @@
+{
+  "test/index_test.py::TestOneToManyRelationships::test_car_class_method": true,
+  "test/index_test.py::TestOneToManyRelationships::test_car_property_methods": true
+}

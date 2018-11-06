@@ -1,0 +1,11 @@
+[
+  "test/index_test.py::TestOneToManyRelationships::test_car_class_method",
+  "test/index_test.py::TestOneToManyRelationships::test_car_property_methods",
+  "test/index_test.py::TestOneToManyRelationships::test_driver_property_methods",
+  "test/index_test.py::TestOneToManyRelationships::test_find_my_cars_instance_method",
+  "test/index_test.py::TestOneToManyRelationships::test_my_trip_summaries_instance_method",
+  "test/index_test.py::TestOneToManyRelationships::test_my_trips_instance_method",
+  "test/index_test.py::TestOneToManyRelationships::test_owner_property_methods",
+  "test/index_test.py::TestOneToManyRelationships::test_trip_class_method",
+  "test/index_test.py::TestOneToManyRelationships::test_trip_property_methods"
+]

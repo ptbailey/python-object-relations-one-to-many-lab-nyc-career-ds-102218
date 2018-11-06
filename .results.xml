@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="2" name="pytest" skips="0" tests="9" time="0.079"><testcase classname="test.index_test.TestOneToManyRelationships" file="test/index_test.py" line="56" name="test_car_class_method" time="0.0008611679077148438"><failure message="AttributeError: type object &apos;Car&apos; has no attribute &apos;all&apos;">self = &lt;index_test.TestOneToManyRelationships testMethod=test_car_class_method&gt;
+
+    def test_car_class_method(self):
+        self.assertItemsEqual(Car._all, [car_1, car_2, car_3])
+&gt;       self.assertItemsEqual(Car.all(), [car_1, car_2, car_3])
+E       AttributeError: type object &apos;Car&apos; has no attribute &apos;all&apos;
+
+test/index_test.py:59: AttributeError</failure></testcase><testcase classname="test.index_test.TestOneToManyRelationships" file="test/index_test.py" line="38" name="test_car_property_methods" time="0.0007224082946777344"><failure message="AttributeError: &apos;Car&apos; object has no attribute &apos;owner&apos;">self = &lt;index_test.TestOneToManyRelationships testMethod=test_car_property_methods&gt;
+
+    def test_car_property_methods(self):
+        self.assertEqual(car_1._make, &quot;Ford&quot;)
+        self.assertEqual(car_1.make, &quot;Ford&quot;)
+        self.assertEqual(car_1._model, &quot;Aerostar Minivan&quot;)
+        self.assertEqual(car_1.model, &quot;Aerostar Minivan&quot;)
+        self.assertEqual(car_1._year, 1997)
+        self.assertEqual(car_1.year, 1997)
+        self.assertEqual(car_1._owner, owner_1)
+&gt;       self.assertEqual(car_1.owner, owner_1)
+E       AttributeError: &apos;Car&apos; object has no attribute &apos;owner&apos;
+
+test/index_test.py:47: AttributeError</failure></testcase><testcase classname="test.index_test.TestOneToManyRelationships" file="test/index_test.py" line="34" name="test_driver_property_methods" time="0.0005729198455810547"></testcase><testcase classname="test.index_test.TestOneToManyRelationships" file="test/index_test.py" line="64" name="test_find_my_cars_instance_method" time="0.0006096363067626953"></testcase><testcase classname="test.index_test.TestOneToManyRelationships" file="test/index_test.py" line="70" name="test_my_trip_summaries_instance_method" time="0.0006322860717773438"></testcase><testcase classname="test.index_test.TestOneToManyRelationships" file="test/index_test.py" line="67" name="test_my_trips_instance_method" time="0.0005655288696289062"></testcase><testcase classname="test.index_test.TestOneToManyRelationships" file="test/index_test.py" line="28" name="test_owner_property_methods" time="0.0005815029144287109"></testcase><testcase classname="test.index_test.TestOneToManyRelationships" file="test/index_test.py" line="60" name="test_trip_class_method" time="0.0005841255187988281"></testcase><testcase classname="test.index_test.TestOneToManyRelationships" file="test/index_test.py" line="48" name="test_trip_property_methods" time="0.0005998611450195312"></testcase></testsuite>
